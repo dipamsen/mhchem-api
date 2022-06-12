@@ -6,22 +6,22 @@ const mhchem = require("mhchemparser");
 
 const app = express();
 
-app.use(cors());
-app.use(helmet());
-app.use(morgan("dev"));
-app.use(express.json());
+// app.use(cors());
+// app.use(helmet());
+// app.use(morgan("dev"));
+// app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.get("/parseTex", (req, res) => {
+app.get("/api", (req, res) => {
   const tex = req.query.tex;
   const result = mhchem.mhchemParser.toTex(tex, "tex");
   res.type("text").send(result);
 });
 
-app.post("/parseTex", (req, res) => {
+app.post("/api", (req, res) => {
   const tex = req.body.tex;
   const result = mhchem.mhchemParser.toTex(tex, "tex");
   res.type("text").send(result);
