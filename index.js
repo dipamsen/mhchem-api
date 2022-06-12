@@ -11,6 +11,10 @@ app.use(helmet());
 app.use(morgan("dev"));
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
+
 app.get("/parseTex", (req, res) => {
   const tex = req.query.tex;
   const result = mhchem.mhchemParser.toTex(tex, "tex");
