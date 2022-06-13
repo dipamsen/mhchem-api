@@ -10,19 +10,5 @@
   "name": "mhchemapi",
   "version": "1.0.0",
   "main": "src/index.js",
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dipamsen/mhchem-api.git"
-  },
-  "keywords": [],
-  "author": "",
-  "bugs": {
-    "url": "https://github.com/dipamsen/mhchem-api/issues"
-  },
-  "homepage": "https://github.com/dipamsen/mhchem-api#readme",
-  "description": ""
+  "devDependencies": {}
 }
