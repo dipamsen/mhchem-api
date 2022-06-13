@@ -15,13 +15,13 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.get("/api", (req, res) => {
+app.get("/parseTex", (req, res) => {
   const tex = req.query.tex;
   const result = mhchem.mhchemParser.toTex(tex, "tex");
   res.type("text").send(result);
 });
 
-app.post("/api", (req, res) => {
+app.post("/parseTex", (req, res) => {
   const tex = req.body.tex;
   const result = mhchem.mhchemParser.toTex(tex, "tex");
   res.type("text").send(result);
