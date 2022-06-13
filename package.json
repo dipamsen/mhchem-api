@@ -9,6 +9,6 @@
   "license": "MIT",
   "name": "mhchemapi",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "api/index.js",
   "devDependencies": {}
 }
