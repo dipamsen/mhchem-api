@@ -6,10 +6,10 @@ const mhchem = require("mhchemparser");
 
 const app = express();
 
-// app.use(cors());
-// app.use(helmet());
-// app.use(morgan("dev"));
-// app.use(express.json());
+app.use(cors());
+app.use(helmet());
+app.use(morgan("dev"));
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
